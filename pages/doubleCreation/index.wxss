@@ -1,0 +1,66 @@
+/* 双创 */
+@import "./template/dct-template.wxss";
+.hidden {
+    overflow: hidden;
+}
+.dct-menuBox {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 100rpx;
+    height: 80rpx;
+    border-top: 2rpx solid #e0e0e0;
+}
+.dct-myTeam__title, .dct-project__title {
+    flex: 1;
+    line-height: 80rpx;
+    text-align: center;
+    margin-top: -4rpx;
+}
+.dct-myTeam__title {
+    border-right: none;
+}
+.dct-menu-active {
+    color: #19b699;
+    border-bottom: 4rpx solid #19b699;
+}
+.dct-content {
+    position: absolute;
+    top: 84rpx;
+    right: 0;
+    bottom: 120rpx;
+    left: 0;
+    overflow: hidden;
+    overflow-y: auto;
+    perspective: 2000rpx;
+    -webkit-overflow-scrolling: touch; /* ios下惯性滚动 */
+}
+/* iponeX系列 */
+.b160 {
+    bottom: 168rpx !important;
+}
+.dct-main {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    background-color: #fff;
+}
+.dct-main-content1, .dct-main-content2 {
+    position: absolute;
+    left: 20rpx;
+    top: 20rpx;
+    right: 20rpx;
+    bottom: 180rpx;
+    transition: transform 1s;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+}
+.dct-main-content1 {
+    transform: rotateY(0deg) translateZ(0);
+}
+.dct-main-content2 {
+    transform: rotateY(-180deg) translateZ(1800rpx);
+}

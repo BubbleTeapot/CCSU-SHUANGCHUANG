@@ -1,0 +1,36 @@
+<!-- 个人中心 -->
+<view class="psn-content {{isIphoneX ? 'b160' : ''}}">
+    <view class="psn-header displayFlex" bindtap="navigateToMy" hover-class="urlActive" data-userInfo="{{userInfo.avatarUrl}}">
+        <view class="psn-imageBox">
+            <image class="" src="{{userInfo.avatarUrl}}"></image>
+        </view>
+        <view class="psn-infoBox">
+            <view class="psn-name">{{userInfo.nickName}}</view>
+            <view class="psn-stdId">{{userInfo.jwcAccount}}</view>
+        </view>
+        <view class="iconfont iconRight ft24"></view>
+    </view>
+    <!-- 个人信息数据 -->
+    <view class="psn-messger displayFlex">
+        <block wx:for="{{personInfoList}}" wx:for-item="item" wx:key="personInfoIndex">
+            <view class="psn-messger-item">
+                <text class="psn-messger-itemName">{{item.personTitle}}</text>
+                <text class="psn-messger-itemValue">\n{{item.personValue}}</text>
+            </view>
+        </block>
+    </view>
+    <!-- 功能 -->
+    <view class="psndiv">
+        <block wx:for="{{funcList}}" wx:for-item="item" wx:key="funcIndex">
+            <view class="psn-activity displayFlex" bindtap="navigateToF" data-index="{{index}}" hover-class="urlActive">
+                <view class="iconfont {{item.iconfont}} ft18 iconPost"></view>
+                <view class="psn-myActive">{{item.myActive}}</view>
+                <view class="iconfont iconRight ft20"></view>
+            </view>
+        </block>
+    </view>
+</view>
+<!-- 底部按钮 -->
+<tabbar-view active-index="3" bind:getIsIphoneX="getIsIphoneX"></tabbar-view>
+<!-- 加载中组件 -->
+<loading-view showLoading="{{showLoading}}" loadingContent="加载中..." ></loading-view>

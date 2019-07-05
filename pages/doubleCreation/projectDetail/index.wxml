@@ -1,0 +1,53 @@
+<!-- 团队项目 -->
+<view class="pjd-content">
+    <!-- 头部 -->
+    <view class="pjd-header displayFlex">
+        <view class="pjd-header-title">{{project.name}}</view>
+        <view class="pjd-header-fold">
+            <text class="iconfont iconDown ft20"></text>
+        </view>
+    </view>
+    <!-- 项目介绍 -->
+    <rich-text nodes="{{project.detailDescription}}"></rich-text>
+    <!-- 开发团队 -->
+    <view class="pjd-teamMess mg10">
+        <view class="pjd-introduce-title">开发团队</view>
+        <view class="pjd-team pdl5">
+            {{teamName}}
+        </view>
+    </view>
+    <!-- 项目荣誉 -->
+    <view class="pjd-honorList mg10">
+        <view class="pjd-introduce-title">项目荣誉</view>
+        <block wx:for="{{project.honors}}" wx:for-item="item" wx:key="honorIndex">
+            <view class="pjd-projectHonor displayFlex pdl5">
+                <text class="iconfont iconHonor ft20"></text>
+                <text class="pjd-honor__name">{{item}}</text>
+            </view>
+        </block>
+    </view>
+    <!-- 项目性质 -->
+    <view class="pjd-property mg10">
+        <view class="pjd-introduce-title">项目性质</view>
+        <view class="pjd-propertyMess pdl5">
+            {{project.properties}}
+        </view>
+    </view>
+    <!-- 项目进展 -->
+    <view class="pjd-progress mg10">
+        <view class="pjd-introduce-title">项目进展</view>
+        <timeline-view class="" eventList="{{project.schedule}}"></timeline-view>
+    </view>
+    <!-- 项目管理 -->
+    <!-- <view class="pjd-manageBox mg10">
+        <view class="pjd-introduce-title">项目管理</view>
+        <view class="pjd-menuBox displayFlex">
+            <view class="pjd-moreBtn ft14">基本信息管理</view>
+            <view class="pjd-moreBtn ft14">团队管理</view>
+            <view class="pjd-moreBtn ft14">荣誉管理</view>
+            <view class="pjd-moreBtn ft14">添加最新进展</view>
+        </view>
+    </view> -->
+</view>
+<!-- 加载中组件 -->
+<loading-view showLoading="{{showLoading}}" loadingContent="加载中..." ></loading-view>

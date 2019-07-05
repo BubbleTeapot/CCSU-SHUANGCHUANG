@@ -1,0 +1,85 @@
+/* 个人中心 */
+.psn-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 120rpx;
+    left: 0;
+    overflow: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch; /* ios下惯性滚动 */
+}
+/* iponeX系列 */
+.b160 {
+    bottom: 168rpx !important;
+}
+.psn-header {
+    font-size: 28rpx;
+    padding: 30rpx 20rpx;
+    align-items: center;
+    background-color: #fd6a42;
+    color: #fff;
+}
+.psn-imageBox {
+    width: 150rpx;
+    height: 150rpx;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.psn-imageBox image {
+    width: 150rpx;
+    height: 150rpx;
+}
+.psn-infoBox {
+    flex: 1;
+    margin-left: 40rpx;
+}
+.psn-name {
+    font-size: 30rpx;
+}
+.psn-stdId, .psn-name {
+    padding: 10rpx 0;
+}
+.iconRight {
+    width: 60rpx;
+}
+/* 个人信息数据 */
+.psn-messger {
+    padding-top: 20rpx;
+    font-size: 28rpx;
+    justify-content: center;
+    align-items: center;
+    background-color: #fd6a42;
+    color: #fff;
+}
+.psn-messger-item {
+    flex: 1;
+    padding: 20rpx 0;
+    text-align: center;
+}
+/* 功能 */
+.psn-activity {
+    height: 100rpx;
+    font-size: 28rpx;
+    align-items: center;
+    background-color: #fff;
+    margin: 0 20rpx;
+    border-bottom: 2rpx solid #e0e0e0;
+}
+.psndiv .psn-activity:nth-child(1) .iconPost {
+    color: #168fdc;
+}
+.psndiv .psn-activity:nth-child(2) .iconPost {
+    color: #47bf64;
+}
+.iconPost {
+    margin-left: 40rpx;
+}
+.psn-myActive {
+    flex: 1;
+    margin-left: 30rpx;
+}
+/* url链接样式 */
+.urlActive {
+    opacity: .8;
+}

@@ -1,0 +1,15 @@
+{
+    "navigationBarBackgroundColor": "#168fdc",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "'萌芽'双创教育服务微平台",
+    "navigationStyle": "default",
+    "backgroundColor": "#fff",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": 50,
+    "usingComponents": {
+        "tabbar-view": "../components/tabbarView/index",
+        "model-view": "../components/modelView/index",
+        "loading-view": "../components/loadingView/index"
+    }
+}

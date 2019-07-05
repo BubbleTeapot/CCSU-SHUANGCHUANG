@@ -1,0 +1,11 @@
+{
+    "navigationBarBackgroundColor": "#fe7a54",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "个人信息",
+    "backgroundColor": "#fff",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": true,
+    "usingComponents": {
+        "loading-view": "../../components/loadingView/index"
+    }
+}

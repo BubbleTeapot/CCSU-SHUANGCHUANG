@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/home/articleDetial/index",
+    "pages/forum/index",
+    "pages/forum/articleDetail/index",
+    "pages/forum/newArticle/index",
+    "pages/forum/articleDetail/commentDetail/index",
+    "pages/doubleCreation/index",
+    "pages/doubleCreation/projectDetail/index",
+    "pages/doubleCreation/teamDetail/index",
+    "pages/doubleCreation/teacherDetail/index",
+    "pages/personal/index",
+    "pages/personal/userInfo/index",
+    "pages/personal/userActivity/index",
+    "pages/personal/userMessages/index",
+    "pages/service/timeTable/index",
+    "pages/service/queryGrade/index",
+    "pages/service/freeClassroom/index",
+    "pages/login/index"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/forum/index",
+        "text": "圈子"
+      },
+      {
+        "pagePath": "pages/doubleCreation/index",
+        "text": "双创"
+      },
+      {
+        "pagePath": "pages/personal/index",
+        "text": "我的"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
+}

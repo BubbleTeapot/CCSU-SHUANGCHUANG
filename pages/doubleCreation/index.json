@@ -1,0 +1,12 @@
+{
+    "navigationBarBackgroundColor": "#32bea4",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "双创",
+    "navigationStyle": "default",
+    "backgroundColor": "#fff",
+    "enablePullDownRefresh": true,
+    "usingComponents": {
+        "tabbar-view": "../components/tabbarView/index",
+        "loading-view": "../components/loadingView/index"
+    }
+}

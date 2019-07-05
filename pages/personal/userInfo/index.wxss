@@ -1,0 +1,41 @@
+/* 个人信息 */
+.usf-messger {
+    height: 100rpx;
+    align-items: center;
+    border-bottom: 2rpx solid #BBB;
+    font-size: 28rpx;
+}
+.usf-userInfoTitle {
+    flex: 1;
+}
+.usf-userPic {
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 50%;
+}
+.usf-userInfocontent {
+    color: #101010;
+}
+.usf-userInfocontent {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 240rpx;
+    height: 100rpx;
+}
+.usf-input {
+    text-align: right;
+    padding: 16rpx 12rpx;
+}
+.usf-footer {
+    position: absolute;
+    bottom: 80rpx;
+    width: 100%;
+}
+.usf-updata {
+    margin: 0 auto;
+    width: 660rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    font-size: 28rpx;
+}

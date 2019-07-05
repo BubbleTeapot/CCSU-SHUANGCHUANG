@@ -1,0 +1,27 @@
+/* 双创导师 */
+.tcr-header {
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding: 0 40rpx;
+}
+.tcr-imageBox {
+    width: 240rpx;
+    height: 240rpx;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 40rpx;
+}
+.tcr-imageBox image {
+    width: 240rpx;
+    height: 240rpx;
+}
+.tcr-name {
+    font-size: 32rpx;
+    margin: 20rpx 0;
+}
+.tcr-teacher-present {
+    padding: 10rpx 20rpx;
+    font-size: 30rpx;
+    text-indent: 2em;
+}

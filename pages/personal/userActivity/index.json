@@ -1,0 +1,11 @@
+{
+    "navigationBarBackgroundColor": "#32bea4",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "活动",
+    "backgroundColor": "#fff",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": true,
+    "usingComponents": {
+        "loading-view": "../../components/loadingView/index"
+    }
+}

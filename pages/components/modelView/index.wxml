@@ -1,0 +1,11 @@
+<!-- 弹出框自定义 -->
+<view class="shade {{showModel ? '': 'hidden'}}">
+    <view class="modelBox">
+        <view class="mdl-header">{{modelTitle}}</view>
+        <view class="mdl-content">{{modelContent}}</view>
+        <view class="mdl-footer">
+            <button class="cancelBtn" bindtap="cancelEvent" hover-class="modelActive" >{{cancelName}}</button>
+            <button class="ensure" hover-class="modelActive" open-type="getUserInfo" bindgetuserinfo="bindgetuserinfo">{{ensureName}}</button>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,16 @@
+<!-- 团队项目 -->
+<view class="tcr-content">
+    <view class="tcr-header displayFlex">
+        <view class="tcr-imageBox">
+            <image class="" src="{{teamTeacher[0].avatar}}"></image>
+        </view>
+        <view class="tcr-name">
+            {{teamTeacher[0].name}}
+        </view>
+    </view>
+    <view class="tcr-teacher-present">
+        {{teamTeacher[0].present}}
+    </view>
+</view>
+<!-- 加载中组件 -->
+<loading-view showLoading="{{showLoading}}" loadingContent="加载中..."></loading-view>

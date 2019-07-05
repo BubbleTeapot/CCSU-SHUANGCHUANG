@@ -1,0 +1,102 @@
+/* 课表 */
+page {
+  height: 100%;
+}
+.hidden {
+    display: none;
+}
+.svc-content {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+.svc-header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 9;
+}
+.svc-headerTitle {
+    height: 80rpx;
+    line-height: 80rpx;
+    text-align: center;
+    font-size: 32rpx;
+}
+.svc-table-thead {
+    display: flex;
+    font-size: 28rpx;
+}
+.svc-table-row {
+    flex: 1;
+}
+.svc-table-row, .svc-table-row1 {
+    text-align: center;
+    height: 80rpx;
+    line-height: 1.4;
+}
+.svc-table-row1 {
+    width: 40rpx;
+}
+/* 课程表 */
+.svc-table {
+    position: absolute;
+    top: 160rpx;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch; /* ios下惯性滚动 */
+}
+.svc-table-bodyBox{
+    padding: 10rpx 0;
+    display: flex;
+    flex-direction: row;
+    font-size: 28rpx;
+    height: 2076rpx;
+}
+.svc-table-body {
+    position: absolute;
+    top: 0;
+    left: 40rpx;
+    right: 0;
+    height: 2076rpx;
+}
+/* 第一列 */
+.svc-table-col1, .svc-table-col {
+    text-align: center;
+}
+.svc-table-col1 {
+    width: 40rpx;
+}
+.svc-table-col {
+    position: absolute;
+    width: 102rpx;
+}
+.svc-table-coursetime {
+    height: 173rpx;
+    line-height: 173rpx;
+}
+.svc-table-courseNodes {
+    padding: 10rpx 0 0 4rpx;
+    height: 336rpx;
+    border-radius: 6rpx;
+    font-size: 24rpx;
+    line-height: 1.4;
+    background-color: #47bf64;
+    box-sizing: border-box;
+    overflow: hidden;
+    
+}
+.mgt {
+    position: absolute;
+    height: 346rpx;
+    overflow: hidden;
+    padding: 4rpx 2rpx;
+}
+.svc-table-empty{
+    height: 336rpx;
+}

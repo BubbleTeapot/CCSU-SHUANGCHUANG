@@ -1,0 +1,30 @@
+<!-- 文章详情 -->
+<view class="atc-content">
+    <!-- 标题 -->
+    <view class="atc-top">
+        <view class="ft16">
+            {{information.title}}
+        </view>
+    </view>
+    <!-- 标签 -->
+    <view class="atc-tip displayFlex">
+        <view class="atc-tip-item activit ft14">{{information.categoryName}}</view>
+    </view>
+    <!-- 文章信息 -->
+    <view class="atc-messBox">
+        <text class="atc-mess-time">发布时间：{{information.releaseTime}}</text>
+        <text class="">作者：{{information.authors}}</text>
+    </view>
+    <!-- 文章内容 -->
+    <view class="atc-essay">
+        <view class="atc-essaycontent">
+            {{information.content}}
+        </view>
+    </view>
+</view>
+<!-- 按钮 -->
+<view class="atc-footer {{information.category == 'ACTIVITY'? '' : 'hidden'}}">
+    <button class="atc-applyBtn" hover-class="atc-applayBtnActive" bindtap="ApplyActivity">申请参加</button>
+</view>
+<!-- 加载中组件 -->
+<loading-view showLoading="{{showLoading}}" loadingContent="加载中..." ></loading-view>

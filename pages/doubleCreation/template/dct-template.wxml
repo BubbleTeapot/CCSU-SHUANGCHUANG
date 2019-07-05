@@ -1,0 +1,38 @@
+<!-- 双创团队 -->
+<template name="allTeam">
+    <view class="dct-myTeam__item displayFlex" bindtap="myTeamNavigateTo" data-id="{{id}}">
+        <view class="dct-myTeam__logoBox">
+            <image class="dct-myTeam__logo" src="{{avatar}}"></image>
+        </view>
+        <view class="dct-myTeam__mess">
+            <view class="dct-myTeam__messTitle">{{name}}</view>
+            <view class="dct-myTeam__messTip">
+                <text class="dct-messTip__title">导师：<text class="dct-messTip__content">{{advisor}}</text></text>
+                <text class="dct-messTip__title">项目：<text class="dct-messTip__content">{{projects}}</text></text>
+                <text class="dct-messTip__title">荣誉：<text class="dct-messTip__content">{{honor}}</text></text>
+            </view>
+            <view class="dct-myTeam__messPic displayFlex">
+                <view class="TeamMember">组员：
+                    <block wx:for="{{groupMemberVOS}}" wx:for-item="item" wx:key="TeamMemberIndex">
+                        {{item.name? item.name : '暂无'}}
+                    </block>
+                </view>
+            </view>
+        </view>
+    </view>
+</template>
+
+<!-- 双创导师 -->
+<template name="teamTeacher">
+    <view class="dct-myTeam__item2 displayFlex" bindtap="navigateToteacher" data-name="{{name}}">
+        <view class="dct-myTeam__logoBox">
+            <image class="dct-myTeam__logo" src="{{avatar}}"></image>
+        </view>
+        <view class="dct-myTeam__mess">
+            <view class="dct-myTeam__messTitle">{{name}}</view>
+            <view class="dct-myTeam__messTip">
+                {{present}}
+            </view>
+        </view>
+    </view>
+</template>

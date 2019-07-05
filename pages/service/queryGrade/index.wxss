@@ -1,0 +1,75 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 28rpx;
+    color: #666;
+}
+.qgd-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 135rpx;
+}
+.qgd-body {
+    width: 100%;
+    margin-top: 135rpx;
+}
+.head{
+    display: flex;
+    justify-content: center;
+    margin: 20rpx 0 10rpx 0;
+}
+
+.title{
+    display: flex;
+    height: 70rpx;
+    text-align: center;
+    line-height: 70rpx;
+    width: 100%;
+    justify-content: space-around;
+    background-color: rgba(238, 238, 238, 0.521);
+}
+
+.grade{
+    display: flex;
+    width: 100%;
+}
+
+.grade text{
+    height: 70rpx;
+    text-align: center;
+    line-height: 70rpx;
+    overflow: hidden;
+    white-space: nowrap;
+    border: 2rpx solid #eee;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    box-sizing: border-box;
+    text-overflow: ellipsis;
+}
+
+/* htcs */
+.grade text:last-child {
+    border-right-color: transparent;
+}
+/*  */
+
+.right{
+    border-right-color: transparent;
+}
+
+.bottom-line{
+    width: 100%;
+    height: 2rpx;
+    background-color: #eee;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.modelBox {
+    margin-top: 200rpx;
+}
+

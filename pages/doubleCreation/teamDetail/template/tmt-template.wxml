@@ -1,0 +1,36 @@
+<!--  -->
+<template name="memberMessDetail">
+    <view class="tmt-memberBox displayFlex">
+        <view class="tmt-memberpic">
+            <image class="tmt-memberImg" src="{{memberLists[index].avatar}}"></image>
+        </view>
+        <view class="tmt-memberInfo">
+            <view class="tmt-memberInfo__name">{{name}}</view>
+            <view class="tmt-memberInfo__college ft12">{{title}}</view>
+            <view class="tmt-memberInfo__job ft12">{{role}}</view>
+        </view>
+    </view>
+</template>
+
+<!-- 项目 -->
+<template name="myProject">
+    <view class="dct-myProject__item" bindtap="myProjectNavigateTo" data-id="{{id}}" data-teamName="{{teamName}}">
+        <view class="dct-myProject-header displayFlex">
+            <view class="dct-header__title">{{name}}</view>
+            <text class="dct-header__tip">{{properties}}</text>
+        </view>
+        <view class="dct-myProject-contentBox">
+            {{description}}
+        </view>
+        <view class="dct-myProject-messBox displayFlex">
+            <view class="dct-messBox-item displayFlex">
+                <view class="dct-messBox__title">导师：</view>
+                <view class="dct-messBox__value">{{advisor}}</view>
+            </view>
+            <view class="dct-messBox-item displayFlex">
+                <view class="dct-messBox__title">荣誉：</view>
+                <view class="dct-messBox__value">{{honors.length}}项</view>
+            </view>
+        </view>
+    </view>
+</template>

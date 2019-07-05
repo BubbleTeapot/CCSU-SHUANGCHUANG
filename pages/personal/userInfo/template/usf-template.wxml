@@ -1,0 +1,31 @@
+<!-- 个人信息模板 -->
+<template name="usfTemplate">
+    <view class="usf-messger pd20 displayFlex">
+        <view class="usf-userInfoTitle">{{userInfoList.avatarUrl}}</view>
+        <view class="usf-userInfocontent"><image class="usf-userPic" src="{{userInfo.avatarUrl}}"></image></view>
+    </view>
+    <view class="usf-messger pd20 displayFlex">
+        <view class="usf-userInfoTitle">{{userInfoList.nickName}}</view>
+        <view class="usf-userInfocontent">
+            <input type="text" class="usf-input" value="{{userInfo.nickName}}" bindinput="getNickName" />
+        </view>
+    </view>
+    <view class="usf-messger pd20 displayFlex">
+        <view class="usf-userInfoTitle">{{userInfoList.jwcAccount}}</view>
+        <view class="usf-userInfocontent"><input type="text" class="usf-input" value="{{userInfo.jwcAccount}}" bindinput="getJwcAccount" /></view>
+    </view>
+    <view class="usf-messger pd20 displayFlex">
+        <view class="usf-userInfoTitle">{{userInfoList.department}}</view>
+        <picker class="usf-depart" bindchange="bindPickerChange" value="{{index}}" range="{{departmentList}}">
+            <view class="usf-userInfocontent">{{departmentList[index]}}</view>
+        </picker>
+    </view>
+    <view class="usf-messger pd20 displayFlex">
+        <view class="usf-userInfoTitle">{{userInfoList.comprehensiveFraction}}</view>
+        <view class="usf-userInfocontent">{{userInfo.comprehensiveFraction ? userInfo.comprehensiveFraction : ''}}</view>
+    </view>
+    <view class="usf-messger pd20 displayFlex">
+        <view class="usf-userInfoTitle">{{userInfoList.qualityFraction}}</view>
+        <view class="usf-userInfocontent">{{userInfo.qualityFraction ? userInfo.qualityFraction : ''}}</view>
+    </view>
+</template>

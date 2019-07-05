@@ -1,0 +1,10 @@
+<!-- 个人信息 -->
+<import src="./template/usf-template.wxml" />
+<view class="usf-content">
+    <template is="usfTemplate" data="{{userInfoList, userInfo, departmentList, index}}"></template>
+    <view class="usf-footer">
+        <button class="usf-updata" bindtap="SaveUserInfo">保存修改</button>
+    </view>
+</view>
+<!-- 加载中组件 -->
+<loading-view showLoading="{{showLoading}}" loadingContent="加载中..." ></loading-view>

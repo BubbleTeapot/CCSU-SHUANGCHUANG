@@ -1,0 +1,12 @@
+{
+    "navigationBarBackgroundColor": "#32bea4",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "团队",
+    "backgroundColor": "#fff",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": true,
+    "usingComponents": {
+        "timeline-view": "../../components/timelineView/index",
+        "loading-view": "../../components/loadingView/index"
+    }
+}

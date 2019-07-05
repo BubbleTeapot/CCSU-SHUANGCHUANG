@@ -1,0 +1,15 @@
+<!-- 空闲教室 -->
+<view class="fcr-content">
+  <view class="fcr-raw">
+    <block wx:for="{{freeClassroom}}" wx:for-item="item" wx:key="freeClassroomIndex">
+      <block wx:for="{{item.freeArr}}" wx:for-item="freeItem" wx:key="freeitemIndex">
+        <view class="raw-itemBox" hover-class="none" hover-stop-propagation="false">
+          <view class="raw-item name">{{item.name}}</view>
+          <view class="raw-item">{{freeItem}}</view>
+        </view>
+      </block>
+    </block>
+  </view>
+</view>
+<!-- 加载中组件 -->
+<loading-view showLoading="{{showLoading}}" loadingContent="加载中..."></loading-view>

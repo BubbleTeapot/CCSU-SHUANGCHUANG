@@ -1,0 +1,24 @@
+<!-- 帖子模板 -->
+<template name="articleBox">
+    <view class="frm-articleBox" bindtap="navigateToArticle" hover-class="urlActive" data-id="{{id}}" data-nick_name="{{nick_name}}" data-avatar_url="{{avatar_url}}">
+        <!-- 作者信息 -->
+        <view class="frm-article-header displayFlex">
+            <view class="frm-imageBox">
+                <image class="frm-author-headImg" src="{{avatar_url}}"></image>
+            </view>
+            <view class="frm-author-name">{{nick_name}}</view>
+            <view class="frm-author-time">{{in_time}}</view>
+            <view class="frm-author-tip">[{{tag}}]</view>
+        </view>
+        <!-- 文章名 -->
+        <view class="frm-article-name displayFlex">
+            <view class="frm-articleTitle">{{title}}</view>
+            <view class="praise-num" catchtap="savePraise" hover-class="praiseAcitve" data-id="{{id}}" data-up="{{up}}" data-index="{{index}}">
+                <text class="iconfont iconPraise ft16"></text> {{up}}
+            </view>
+        </view>
+        <view class="frm-article-content">
+            {{content}}
+        </view>
+    </view>
+</template>

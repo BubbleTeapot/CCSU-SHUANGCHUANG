@@ -1,0 +1,24 @@
+<!-- 帖子详情 -->
+<import src="./template/fad-template.wxml" />
+<view class="fad-content">
+    <!-- 文章内容 -->
+    <view class="fad-article-contentBox">
+        <view class="fad-artcle-title">{{topic.title}}</view>
+        <template is="authorBox" data="{{...author}}"></template>
+        <view class="fad-artcle-essay">
+            {{topic.content}}
+        </view>
+    </view>
+    <!-- 评论部分 -->
+    <block wx:for="{{commentList}}" wx:for-item="item" wx:key="commentIndex" wx:for-index="index">
+        <template is="commentBox" data="{{...item, index}}"></template>
+    </block>
+</view>
+<!-- 发表评论 -->
+<view class="commentInputBox displayFlex">
+    <input class="commentInput" type="text" placeholder="写下你的评论" placeholder-class="comment-pld" cursor-spacing="30"
+        bindinput="getComment" />
+    <view class="iconfont iconPublic ft20" hover-class="commentBtnClick" bindtap="SaveComment"></view>
+</view>
+<!-- 加载中组件 -->
+<loading-view showLoading="{{showLoading}}" loadingContent="加载中..."></loading-view>

@@ -1,0 +1,12 @@
+<!-- 主题编辑 -->
+<view class="nat-content">
+    <view class="nat-editBox">
+        <input class="topic-contentinput" placeholder="请输入标题" placeholder-class="placeholderTopic" maxlength="40" cursor-spacing="10" bindinput="getTitle"></input>
+    </view>
+    <view class="nat-editBox">
+        <textarea class="topic-content" placeholder="请输入内容" placeholder-class="placeholderTopic" maxlength="-1" cursor-spacing="2" bindinput="getTopic"></textarea>
+    </view>
+    <view class="nat-saveArticleBox">
+        <button class="nat-saveArticle" bindtap="SaveTopic">发表</button>
+    </view>
+</view>

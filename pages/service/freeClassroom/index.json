@@ -1,0 +1,11 @@
+{
+    "navigationBarBackgroundColor": "#47bf64",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "空闲教室",
+    "backgroundColor": "#fff",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": true,
+    "usingComponents": {
+        "loading-view": "../../components/loadingView/index"
+    }
+}

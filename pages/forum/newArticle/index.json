@@ -1,0 +1,8 @@
+{
+    "navigationBarBackgroundColor": "#168fdc",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "发表主题",
+    "backgroundColor": "#fff",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": true
+}

@@ -1,0 +1,9 @@
+<!-- 活动 -->
+<import src="./template/usa-template.wxml" />
+<view class="usa-content">
+    <block wx:for="{{userActivityList}}" wx:for-item="item" wx:key="userActivityindex">
+        <template is="usaTemplate" data="{{...item, userImage, index}}"></template>
+    </block>
+</view>
+<!-- 加载中组件 -->
+<loading-view showLoading="{{showLoading}}" loadingContent="加载中..." ></loading-view>

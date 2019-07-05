@@ -1,0 +1,49 @@
+<!-- 课表 -->
+<view class="svc-content">
+  <!-- 课程表 -->
+  <view class="svc-header" catchtouchstart="touchStart" catchtouchend="touchEnd">
+    <view class="svc-headerTitle">第
+      <text class="">{{week}}</text>周</view>
+    <view class="svc-table-thead">
+      <view class="svc-table-row1">
+        <text class="">{{courseDate.month}}</text>
+        <text class="ft13">\n月</text>
+      </view>
+      <block wx:for="{{weekdayName}}" wx:for-item="item" wx:key="weekdayNameIndex" wx:for-index="index">
+        <view class="svc-table-row">
+          <text class="ft13">{{weekdayDate[index]}}</text>
+          <text class="">\n{{item}}</text>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view class="svc-table">
+    <!-- 最左侧列 -->
+    <view class="svc-table-bodyBox">
+      <view class="svc-table-col1">
+        <block wx:for="{{courseDate.courseFirstCol}}" wx:for-item="item" wx:key="timeIndex">
+          <view class="svc-table-coursetime">
+            <text class="">{{item}}</text>
+          </view>
+        </block>
+      </view>
+      <view class="svc-table-body">
+        <block wx:for="{{courseList}}" wx:for-item="item1" wx:for-index="idx1" wx:key="item1Index">
+          <view class="svc-table-col" style="left:{{item1.weekday*102}}rpx;">
+            <block wx:for="{{courseList[idx1].courseDetail}}" wx:for-item="item2" wx:for-index="idx2" wx:key="item2Index">
+              <view class="mgt" style="top:{{item2.section*346}}rpx;">
+                <view class="svc-table-courseNodes">
+                  <text class="">{{item2.subjectName}}</text>
+                  <text class="">\n\n@{{item2.teacher}}</text>
+                  <text class="">\n{{item2.location}}</text>
+                </view>
+              </view>
+            </block>
+          </view>
+        </block>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 加载中组件 -->
+<loading-view showLoading="{{showLoading}}" loadingContent="加载中..."></loading-view>

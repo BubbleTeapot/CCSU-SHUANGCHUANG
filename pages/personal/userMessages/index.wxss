@@ -1,0 +1,52 @@
+/* 我的消息 */
+
+.messBox{
+  padding: 0 30rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.message-block{
+  display: flex;
+  margin: 40rpx 0;
+}
+
+.img-head image{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+
+}
+
+.message-content{
+  position: relative;
+  width: 520rpx;
+  min-height: 36rpx;
+  background-color: #F0F0F0;
+  line-height: 36rpx;
+  border-radius: 10rpx;
+  margin-left: 30rpx;
+  font-size: 28rpx;
+  padding: 20rpx 30rpx;
+  color: #353535;
+}
+
+.pst{
+  position: relative;
+}
+
+.time{
+  color: #9D9D9D;
+  margin-top: 15rpx ;
+  font-size: 26rpx;
+}
+
+.angle-left{
+  position: absolute;
+  left: -10rpx;
+  top: 30rpx;
+  width: 0px;           
+  height: 0px;
+  border: 20rpx solid transparent;
+  border-right-color: #F0F0F0;
+}

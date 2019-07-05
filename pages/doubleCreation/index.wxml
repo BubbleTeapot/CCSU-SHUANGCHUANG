@@ -1,0 +1,26 @@
+<!-- 双创 -->
+<import src="./template/dct-template.wxml" />
+<view class="dct-menuBox">
+    <view  wx:for="{{menusList}}" wx:for-item="item" wx:key="menuListIndex" class="dct-myTeam__title ft14 {{menuIndex == index ? 'dct-menu-active' : ''}}" bindtap="menuClick" data-index="{{index}}">{{item.name}}
+    </view>
+</view>
+<view class="dct-content {{isIphoneX ? 'b160' : ''}}">
+    <view class="dct-main">
+        <!-- 双创团队 -->
+        <view class="{{menuIndex == 0 ? '' : 'hidden'}} {{menuIndex == 0 ? 'dct-main-content1' : 'dct-main-content2'}}">
+            <block wx:for="{{teamList}}" wx:for-item="item1" wx:key="allTeamIndex">
+                <template is="allTeam" data="{{...item1}}"></template>
+            </block>
+        </view>
+        <!-- 双创导师 -->
+        <view class=" {{menuIndex == 1 ? '' : 'hidden'}} {{menuIndex == 1 ? 'dct-main-content1' : 'dct-main-content2'}}">
+            <block wx:for="{{teamTeacher}}" wx:for-item="item2" wx:key="teamTeacherIndex">
+                <template is="teamTeacher" data="{{...item2}}"></template>
+            </block>
+        </view>
+    </view>
+</view>
+<!-- 底部按钮 -->
+<tabbar-view active-index="2" bind:getIsIphoneX="getIsIphoneX"></tabbar-view>
+<!-- 加载中组件 -->
+<loading-view showLoading="{{showLoading}}" loadingContent="加载中..." ></loading-view>

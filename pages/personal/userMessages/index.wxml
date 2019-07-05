@@ -1,0 +1,19 @@
+<!-- 我的消息 -->
+<view class="messBox">
+  <block wx:for="{{messages}}" wx:key="bannarNum">
+    <view class='message-block'>
+      <view class='img-head'>
+        <image src='https://iconfont.alicdn.com/t/1550898018467.jpeg@100h_100w.jpg'></image>
+      </view>
+      <view class='pst'>
+        <view class='angle-left'></view>
+        <view class='message-content'>
+          <view class='text'>{{item.content}}</view>
+          <view class='time'>{{item.in_time}}</view>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>
+<!-- 加载中组件 -->
+<loading-view showLoading="{{showLoading}}" loadingContent="加载中..." ></loading-view>

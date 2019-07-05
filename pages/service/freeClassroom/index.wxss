@@ -1,0 +1,18 @@
+/* 空闲教室 */
+.fcr-raw {
+    -webkit-overflow-scrolling: touch; /* ios下惯性滚动 */
+}
+        
+.raw-itemBox {
+    width: 100%;
+    display: flex;
+}
+.raw-item {
+    height: 100rpx;
+    margin-left: 20rpx;
+    margin-right: 20rpx;
+    line-height: 100rpx;
+}
+.name {
+    flex: 1;
+}

@@ -1,0 +1,7 @@
+<!-- 加载组件 -->
+<view class="shade {{showLoading ? '': 'hidden'}}">
+    <view class="loadingBox">
+        <view class="ldg-header"><text class="iconfont iconLoading"></text></view>
+        <view class="ldg-content">{{loadingContent}}</view>
+    </view>
+</view>

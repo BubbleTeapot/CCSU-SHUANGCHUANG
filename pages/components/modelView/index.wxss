@@ -1,0 +1,66 @@
+/* 弹出框 */
+.hidden {
+    display: none !important;
+}
+.shade {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .3);
+    z-index: 99999;
+}
+.modelBox {
+    position: relative;
+    width: 600rpx;
+    background-color: #fff;
+    padding: 30rpx;
+    box-sizing: border-box;
+    border-radius: 8rpx;
+}
+.mdl-header {
+    font-size: 32rpx;
+    color: #000;
+    text-align: center;
+}
+.mdl-content {
+    color: #666;
+    margin: 20rpx 0 100rpx;
+    text-align: center;
+    font-size: 28rpx;
+}
+.mdl-footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    border-top: 1rpx solid #ccc;
+}
+.cancelBtn, .ensure {
+    flex: 1;
+    font-size: 32rpx;
+    background-color: #fff;
+    border-radius: 0;
+}
+.cancelBtn::after, .ensure::after {
+    border: none;
+}
+.cancelBtn {
+    color: #333;
+    border-radius:  0 0 0 8rpx;
+}
+.ensure {
+    color: #333;
+    border-left: 1rpx solid #ccc;
+    border-radius:  0 0 8rpx 0;
+}
+/* 模态框点击 */
+.modelActive {
+    color: #666;
+    background-color: rgba(0, 0, 0, 0.03);
+}

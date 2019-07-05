@@ -1,0 +1,61 @@
+/* 帖子详情 */
+@import './template/fad-template.wxss';
+.fad-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 140rpx;
+    left: 0;
+    overflow: hidden;
+    overflow-y: auto;
+    background-color: #f0f0f2;
+    -webkit-overflow-scrolling: touch; /* ios下惯性滚动 */
+}
+.fad-article-contentBox {
+    padding: 20rpx;
+    background-color: #fff;
+}
+.fad-artcle-title {
+    font-size: 32rpx;
+}
+/* 富文本 */
+.fad-artcle-essay {
+    text-indent: 2em;
+    font-size: 28rpx;
+}
+
+/* 发表评论 */
+.commentBtnClick {
+    color: #f00;
+}
+.commentInputBox  {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.commentInput {
+    margin-left: 20rpx;
+    margin-bottom: 30rpx;
+    width: 640rpx;
+    padding: 10rpx 12rpx;
+    border-radius: 10rpx;
+    font-size: 24rpx;
+    z-index: 999;
+    background-color: #eee;
+}
+.comment-pld {
+    font-size: 24rpx;
+    padding-left: 16rpx;
+}
+
+.iconPublic {
+    height: 82rpx;
+    line-height: 82rpx;
+    margin-bottom: 20rpx;
+    margin-left: 16rpx;
+}
+
+/* url链接样式 */
+.urlActive {
+    background-color: rgba(0, 0, 0, .03)
+}

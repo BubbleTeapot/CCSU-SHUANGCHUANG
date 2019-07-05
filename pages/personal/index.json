@@ -1,0 +1,12 @@
+{
+    "navigationBarBackgroundColor": "#fe7a54",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "个人中心",
+    "backgroundColor": "#fff",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": true,
+    "usingComponents": {
+        "tabbar-view": "../components/tabbarView/index",
+        "loading-view": "../components/loadingView/index"
+    }
+}

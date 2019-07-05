@@ -1,0 +1,48 @@
+<!-- 团队详情 -->
+<import src="./template/tmt-template.wxml" />
+<view class="tmt-content">
+    <view class="tmt-header displayFlex" bindtap="ctrMember">
+        <view class="tmt-header-title">{{teamName}}</view>
+        <view class="tmt-header-fold">
+            <text class="iconfont {{showTeammember ? 'iconUp' : 'iconDown'}} ft20"></text>
+        </view>
+    </view>
+    <!-- 团队成员简介 -->
+    <view class="tmt-membersBox clearfix {{showTeammember ? 'height' : ''}}">
+        <block wx:for="{{memberList}}" wx:for-item="item" wx:key="memberIndex">
+            <template is="memberMessDetail" data="{{...item , memberLists, index}}"></template>
+        </block>
+    </view>
+    <!-- 团队项目简介 -->
+    <view class="tmt-project-introduce">
+        <!-- 团队荣誉 -->
+        <view class="mgB20">
+            <view class="tmt-introduce-title">团队荣誉</view>
+            <block wx:for="{{honorList}}" wx:for-item="item" wx:key="honorIndex">
+                <view class="tmt-projectHonor displayFlex">
+                    <text class="iconfont iconHonor ft20"></text>
+                    <text class="tmt-honor__name">{{item}}</text>
+                </view>
+            </block>
+        </view>
+        <!-- 团队日志 -->
+        <view class="mgB20">
+            <view class="tmt-introduce-title displayFlex" bindtap="ctrTeamLog">
+                <view class="tmt-header-title">团队日志</view>
+                <view class="tmt-header-fold">
+                    <text class="iconfont {{showTeamLog ? 'iconUp' : 'iconDown' }} ft20"></text>
+                </view>
+            </view>
+            <timeline-view class="{{showTeamLog ? 'timeline' : ''}}" eventList="{{teamLog}}"></timeline-view>
+        </view>
+        <!-- 团队项目 -->
+        <view class="mgB20">
+            <view class="tmt-introduce-title">团队项目</view>
+            <block wx:for="{{projects}}" wx:for-item="item" wx:key="projectsIndex">
+                <template is="myProject" data="{{...item, advisor, teamName}}"></template>
+            </block>
+        </view>
+    </view>
+</view>
+<!-- 加载中组件 -->
+<loading-view showLoading="{{showLoading}}" loadingContent="加载中..." ></loading-view>
